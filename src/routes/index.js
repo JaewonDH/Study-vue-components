@@ -33,6 +33,10 @@ const router = new VueRouter({
       path: '/mixin',
       component: () => import('@/components/view/MixinPattern'),
     },
+    {
+      path: '/common',
+      component: () => import('@/components/view/CompositionToCommonPattern'),
+    },
   ],
 });
 

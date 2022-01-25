@@ -4,7 +4,8 @@
     <router-link to="/components">ComponentsPattern</router-link> |
     <router-link to="/slot">SlotPattern</router-link> |
     <router-link to="/control">ControlComponent</router-link> |
-    <router-link to="/mixin">Mixin</router-link>
+    <router-link to="/mixin">Mixin</router-link> |
+    <router-link to="/common">CompositionToCommonPattern</router-link>
   </div>
 </template>
 
