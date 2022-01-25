@@ -1,6 +1,6 @@
-import Vue from "vue";
-import Vuex from "vuex";
-import { fetchNewsList, fetchUserInfo } from "../api/index";
+import Vue from 'vue';
+import Vuex from 'vuex';
+import { fetchNewsList, fetchUserInfo } from '../api/index';
 
 Vue.use(Vuex);
 export default new Vuex.Store({
@@ -12,11 +12,11 @@ export default new Vuex.Store({
   mutations: {
     setNewsList(state, list) {
       state.newsList = list;
-      console.log("state.newsList", state.newsList);
+      console.log('state.newsList', state.newsList);
     },
     setUserInfo(state, user) {
       state.userInfo = user;
-      console.log("state.setUserInfo", state.userInfo);
+      console.log('state.setUserInfo', state.userInfo);
     },
   },
 
@@ -24,7 +24,7 @@ export default new Vuex.Store({
     async actionNewsList(context) {
       try {
         let response = await fetchNewsList();
-        context.commit("setNewsList", response.data);
+        context.commit('setNewsList', response.data);
       } catch (error) {
         console.log(error);
       }
@@ -34,7 +34,7 @@ export default new Vuex.Store({
       try {
         let response = await fetchUserInfo(user);
         console.log(user);
-        context.commit("setUserInfo", response.data);
+        context.commit('setUserInfo', response.data);
       } catch (error) {
         console.log(error);
       }
