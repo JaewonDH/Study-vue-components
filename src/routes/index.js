@@ -11,27 +11,23 @@ const router = new VueRouter({
     },
     {
       path: "/store",
-      component: () => import("@/components/StoreDataPattern"),
+      component: () => import("@/components/view/StoreDataPattern"),
     },
     {
       path: "/components",
-      component: () => import("@/components/ComponentsPattern"),
-    },
-    {
-      path: "/jobs",
-      component: () => import("@/components/JobsView"),
+      component: () => import("@/components/view/ComponentsPattern"),
     },
     {
       path: "/slot",
-      component: () => import("@/components/SlotPattern"),
+      component: () => import("@/components/view/SlotPattern"),
     },
     {
       path: "/user/:id",
-      component: () => import("@/components/UserView"),
+      component: () => import("@/components/view/UserView"),
     },
     {
       path: "/control",
-      component: () => import("@/components/ControlComponent"),
+      component: () => import("@/components/view/ControlComponent"),
     },
   ],
 });

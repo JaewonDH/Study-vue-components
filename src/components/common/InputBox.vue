@@ -10,7 +10,7 @@
 <script>
 export default {
   model: {
-    prop: "inputData",
+    prop: 'inputData',
   },
   props: {
     value: String,
@@ -18,7 +18,7 @@ export default {
   },
   setup(props, context) {
     function onInput(event) {
-      context.emit("inputChangeEvent", event.target.value);
+      context.emit('inputChangeEvent', event.target.value);
     }
 
     return {

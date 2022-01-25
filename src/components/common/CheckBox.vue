@@ -22,11 +22,11 @@
 */
 
 export default {
-  props: ["value"],
+  props: ['value'],
   setup(props, context) {
     let clickChange = () => {
       console.log();
-      context.emit("input", !props.value);
+      context.emit('input', !props.value);
     };
     return {
       clickChange,

@@ -20,12 +20,12 @@ export default {
   },
   setup(props, context) {
     let onClickA = (event) => {
-      context.emit("changeArray", true, event);
+      context.emit('changeArray', true, event);
     };
 
     let onClickB = (event) => {
-      context.emit("changeArray", false, event);
-      props.userList.push("aaa");
+      context.emit('changeArray', false, event);
+      props.userList.push('aaa');
     };
 
     return {
